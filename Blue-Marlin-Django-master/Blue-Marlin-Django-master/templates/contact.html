@@ -1,0 +1,163 @@
+{% extends 'base.html' %} {% block breadcrumbs %}
+<div id="events" class="module parallax parallax-events breadcrumbs my_clasinging">
+    <div class="container">
+        <div class="row">
+            <div class="event-inner col-sm-12 text-center">
+                <div class="main_heading text-tranmm block2  text_Marlins wows ">
+
+                    <span class="border_left border_m"></span> <span class="border_right border_n"></span> <span style="position: relative; top: -8px;">WellCome To Marlin  </span>
+                    <div class="center_text"><span class="blackText">Let’s Talk </span> <span class="big_text color_white">
+            <p class="big_letter">C</p>ontact Us </span></div>
+                    <span style="position: relative; top: -8px;"> and have your dream event handled </span>
+
+                </div>
+                <div class="contactmins">
+                    <p> Call Us <a href="phn:0181-2000048"> 0181-2000048</a>
+                    </p>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+<a href="#" class="icon-right-arrow rotate arrow-bottom smooth" data-scroll-nav="0"></a>
+
+<!-- end breadcrumbs -->{% endblock %} {% block content %}
+<style>
+    .contactForm textarea,
+    .contactForm input[type="text"],
+    .contactForm input[type="number"],
+    .contactForm input[type="email"],
+    .contactForm input[type="tel"] {
+        background: transparent none repeat scroll 0 0;
+        border: 1px solid #f58634;
+        border-radius: 4px;
+        box-shadow: none;
+        color: #333 !important;
+        font-family: "Open Sans", Arial, Helvetica, sans-serif;
+        font-size: 15px;
+        font-style: normal;
+        font-weight: 600;
+        height: 38px;
+        line-height: 20px;
+        margin: 0 0 17px 10px;
+        padding: 9px 19px;
+        transition: all 0.3s ease 0s;
+        width: 45%;
+    }
+    
+    .contactmins p {
+        font-size: 22px;
+        color: #fff;
+        font-weight: 600;
+    }
+    
+    .contactmins a {
+        color: #fff;
+        text-decoration: none;
+    }
+    
+    .contactmins {
+        width: 27%;
+        background: #f58634;
+        padding: 14px 10px;
+        position: absolute;
+        z-index: 1;
+        top: 70%;
+        right: 0;
+    }
+    
+    .contact_description {
+        color: #333;
+        display: block;
+        font-size: 16px;
+        font-weight: 600;
+        line-height: 25px;
+        padding-left: 45px;
+        text-align: left;
+    }
+    
+    .contact_description>a {
+        color: #333;
+        font-weight: 600;
+    }
+</style>
+
+
+<section id="about">
+
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3689.8555681358157!2d91.81955831426967!3d22.359081796410308!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30acd89aaa8239cd%3A0x6e65fa00001dd59f!2sGEC+More%2C+Chittagong!5e0!3m2!1sen!2sbd!4v1555086744729!5m2!1sen!2sbd"
+        width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+    <div class="new_conatcts">
+        <div class="row main_rows">
+
+            <!-- contact_info starts -->
+            <div class="col-sm-12">
+                <div class="col-sm-12">
+                    <div class="contact_info align_center"> <i class="fa fa-map-marker"></i>
+                        <h4 class="contact_title">Office Location</h4>
+                        <p class="contact_description"><strong>Blue Marlin Events</strong><br> O R Nizam road, GEC Circle, Chittagong</p>
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <div class="contact_info align_center"> <i class="fa fa-phone"></i>
+                        <h4 class="contact_title">Call Us</h4>
+                        <p class="footer-text"> <a href="phn:0181-2000048"> 0181-2000048</a> </p>
+                    </div>
+                </div>
+                <!-- contact_info ends -->
+                <div class="col-sm-6">
+                    <div class="contact_info align_center"> <i class="fa fa-envelope-o"></i>
+                        <h4 class="contact_title">Email</h4>
+                        <p class="contact_description"><a href="mailto:info@marlin.net">info@marlin.net</a></p>
+                    </div>
+                </div>
+                <!-- contact_info starts -->
+                <!-- contact_info starts -->
+            </div>
+            <!-- contact_info ends -->
+            <div class="col-sm-12">
+                <div id="message">
+                    {% if messages %}
+                        {% for message in messages %}
+                           <h2> {{ message }}</h2>
+                        {% endfor %}
+                    {% endif %}
+                </div>
+        
+
+        <form action="store_contact" method="POST" class="contactForm sky-form">
+            {% csrf_token %}
+            <div class="col-sm-12"> 
+                <span class="field_single">
+                    <input id="email" name="email" value="" placeholder="Email" type="email">
+                </span>
+                <span class="field_single">
+                    <input  placeholder="Phone" type="tel" id="phone"  name="phone">
+                </span> 
+                <span class="field_single">
+                    <input  placeholder="Details" type="text" id="details" name="details">
+                </span>
+            </div>
+            <div class="col-sm-12">
+                <input value="Submit Now" class="button button-arrow rows_btn main_btn" type="submit">
+            </div>
+        </form>
+                                       
+       
+
+    </div>
+</div>
+    </div>
+    </div>
+    <!--/container-->
+</section>
+<br>
+<br>
+<script>
+    const message_ele = document.getElementById("message");
+    setTimeout(function(){ 
+        message_ele.style.display = "none"; 
+     }, 5000);
+</script>
+<br> {% endblock %}

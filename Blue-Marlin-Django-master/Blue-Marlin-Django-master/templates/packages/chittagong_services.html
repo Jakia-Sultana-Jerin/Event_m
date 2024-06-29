@@ -1,0 +1,182 @@
+{% extends '../base.html' %} {% load static %} {% block breadcrumbs %}
+<div class="container_fluid">
+    <div
+        class="block"
+        style="
+            height: 500px;
+            width: 100%;
+            background-image: url({% static 'images/photographer/dcbg.jpg' %});
+        "
+    >
+        <div class="row">
+            <div class="event-inner col-sm-12 text-center">
+                <div
+                    class="main_heading block2 wow fadeInUp animated text-tranmms"
+                    data-wow-delay="0.5s"
+                    data-wow-duration="1s"
+                    style="
+                        visibility: visible;
+                        animation-duration: 1s;
+                        animation-delay: 0.5s;
+                        animation-name: fadeInUp;
+                    "
+                >
+                    <span style="position: relative; top: -8px; color: #9999ff"
+                        >Where creativity
+                    </span>
+                    <div class="center_text">
+                        <span class="blackText" style="6s">Enter </span>
+                        <span class="big_text color_white" style="color: blue">
+                            <p class="big_letter">B</p>
+                            lue Marlin</span
+                        >
+                    </div>
+                    <span style="position: relative; top: -8px; color: #9999ff">
+                        knows no bounds</span
+                    >
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+{% endblock %} {% block content %}
+<div class="module parallax parallax-events" id="events">
+    <div class="container">
+        <div class="row">
+            <div class="event-inner col-sm-12 text-center">
+                <div
+                    class="main_heading block2 wow fadeInUp animated"
+                    data-wow-delay="0.5s"
+                    data-wow-duration="1s"
+                    style="
+                        visibility: visible;
+                        animation-duration: 1s;
+                        animation-delay: 0.5s;
+                        animation-name: fadeInUp;
+                    "
+                >
+                    <span class="border_left left_client"></span>
+                    <span class="border_right right_client"></span>
+                    <span style="position: relative; top: -8px"
+                        >We are committed to</span
+                    >
+
+                    <div class="center_text">
+                        <span class="blackText">Our Chittagong</span>
+                        <span class="big_text color_white"> </span>
+
+                        <p class="big_letter">
+                            <span class="big_text color_white">P</span>
+                        </p>
+                        <span class="big_text color_white"> ackages</span>
+                    </div>
+                    <span style="position: relative; top: -8px"
+                        >Protecting your Memory</span
+                    >
+                </div>
+
+                <!-- Split button -->
+
+                <div class="btn-group">
+                    <button type="button" class="btn btn-info btn-lg">
+                        Car Design
+                    </button>
+                    <button
+                        type="button"
+                        class="btn btn-info btn-lg dropdown-toggle"
+                        data-toggle="dropdown"
+                        aria-haspopup="true"
+                        aria-expanded="false"
+                    >
+                        <span class="caret"></span>
+                        <span class="sr-only">Toggle Dropdown</span>
+                    </button>
+                    <ul class="dropdown-menu">
+                        <li><a href="black_car">Marlin's BLACK CAR</a></li>
+                        <li><a href="white_car">Marlin's WHITE CAR</a></li>
+                    </ul>
+                </div>
+
+                <!-- Bridal Dress Design-->
+
+                <div class="btn-group">
+                    <button type="button" class="btn btn-info btn-lg">
+                        Bridal Dress Design
+                    </button>
+                    <button
+                        type="button"
+                        class="btn btn-info btn-lg dropdown-toggle"
+                        data-toggle="dropdown"
+                        aria-haspopup="true"
+                        aria-expanded="false"
+                    >
+                        <span class="caret"></span>
+                        <span class="sr-only">Toggle Dropdown</span>
+                    </button>
+                    <ul class="dropdown-menu">
+                        <li>
+                            <a href="elegant_coctail_cresses"
+                                >Elegant Coctail Dresses</a
+                            >
+                        </li>
+                        <li><a href="bridal-saree">Bridal Saree</a></li>
+                        <li>
+                            <a href="bridal-lahenga">Bridal Lahenga</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <!--Groom Dress Design -->
+                <div class="btn-group">
+                    <button type="button" class="btn btn-info btn-lg">
+                        Groom Dress Design
+                    </button>
+                    <button
+                        type="button"
+                        class="btn btn-info btn-lg dropdown-toggle"
+                        data-toggle="dropdown"
+                        aria-haspopup="true"
+                        aria-expanded="false"
+                    >
+                        <span class="caret"></span>
+                        <span class="sr-only">Toggle Dropdown</span>
+                    </button>
+                    <ul class="dropdown-menu">
+                        <li>
+                            <a href="formal-dresses">Formal Dresses</a>
+                        </li>
+                        <li><a href="groom-panjabi"> Punjabi</a></li>
+                    </ul>
+                </div>
+                <!-- Photography -->
+                <div class="btn-group">
+                    <a href="photographer"
+                        ><button type="button" class="btn btn-info btn-lg">
+                            Photography
+                        </button></a
+                    >
+                </div>
+
+                <!-- cinematograhy] -->
+                <div class="btn-group">
+                    <a href="cinemetography"
+                        ><button type="button" class="btn btn-info btn-lg">
+                            Cinematography
+                        </button></a
+                    >
+                </div>
+
+                <!-- add ons -->
+                <div class="btn-group">
+                    <a href="projector"
+                        ><button type="button" class="btn btn-info btn-lg">
+                            Projector
+                        </button></a
+                    >
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

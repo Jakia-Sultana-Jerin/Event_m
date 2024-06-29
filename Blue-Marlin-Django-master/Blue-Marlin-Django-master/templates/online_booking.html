@@ -1,0 +1,91 @@
+{% extends 'base.html' %} {% load static %} {% block breadcrumbs %}
+<!-- start breadcrumbs -->
+
+<div id="events" class="module parallax parallax-events breadcrumbs my_clasinging">
+    <div class="container">
+        <div class="row">
+            <div class="event-inner col-sm-12 text-center">
+                <div class="main_heading text-tranmm block2  text_Marlins wows ">
+
+
+                    <span class="border_left border_m"></span> <span class="border_right border_n"></span> <span style="position: relative; top: -8px;">WellCome To Marlin  </span>
+                    <div class="center_text"><span class="blackText">Let’s Fillup </span> <span class="big_text color_white">
+            <p class="big_letter">O</p>nline Form </span></div>
+                    <span style="position: relative; top: -8px;"> and have your dream event handled </span>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+<a href="#" class="icon-right-arrow rotate arrow-bottom smooth" data-scroll-nav="0"></a>
+
+<!-- end breadcrumbs -->
+{% endblock %} {% block content %}
+
+
+
+<div class="module parallax parallax-events" id="events">
+    <div class="container">
+        <div class="row">
+            <div class="event-inner col-sm-12 text-center">
+                <div class="main_heading block2 wow fadeInUp animated" data-wow-delay="0.5s" data-wow-duration="1s" style="visibility: visible; animation-duration: 1s; animation-delay: 0.5s; animation-name: fadeInUp;"><span class="border_left left_client"></span> <span class="border_right right_client"></span> <span style="position: relative; top: -8px;">We are committed to</span>
+
+                    <div class="center_text"><span class="blackText">Online</span> <span class="big_text color_white"> </span>
+
+                        <p class="big_letter"><span class="big_text color_white">B</span></p>
+                        <span class="big_text color_white"> ooking</span></div>
+                    <span style="position: relative; top: -8px;">Protecting your Memory</span></div>
+                <section id="contact">
+                    <div class="container text-center">
+                        
+                        
+                        <div class="row ">
+                            <form action="store_booking" method="POST">
+                                {% csrf_token %}
+                                <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+                                    <input type="text" name="name" class="form-control" placeholder="Your Name"><br>
+    
+                                    <input type="text" name="email" class="form-control" placeholder="Your Email"><br>
+    
+                                </div><br>
+    
+                                <div class="row ">
+                                    <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+                                        <textarea name="description" class="form-control" column="2" placeholder="Type Your Full Event Details here"></textarea>
+                                    </div><br>
+    
+    
+                                </div><br>
+                                <div class="row btn-center">
+                                    <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
+                                        <a href=""><button type="submit" class="btn btn-primary btn-center  btn-lg">SUBMIT</button></a>
+                                    </div><br>
+    
+    
+                                </div><br>
+                            </form>
+
+                            <div id="message">
+                                {% if messages %}
+                                    {% for message in messages %}
+                                       <h2> {{ message }}</h2>
+                                    {% endfor %}
+                                {% endif %}
+                            </div>
+                        </div>
+                    </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const message_ele = document.getElementById("message");
+        setTimeout(function(){ 
+            message_ele.style.display = "none"; 
+         }, 5000);
+    </script>
+
+
+    {% endblock %}

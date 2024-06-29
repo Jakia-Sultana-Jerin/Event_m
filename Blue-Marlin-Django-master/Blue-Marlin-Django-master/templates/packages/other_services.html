@@ -1,0 +1,181 @@
+{% extends '../base.html' %} {% load static %} {% block breadcrumbs %}
+<!-- start breadcrumbs -->
+
+<div
+    id="events"
+    class="module parallax parallax-events breadcrumbs about_text my_text"
+>
+    <div class="container">
+        <div class="row">
+            <div class="event-inner col-sm-12 text-center">
+                <div
+                    class="main_heading block2 wow fadeInUp animated text-tranmms"
+                    data-wow-delay="0.5s"
+                    data-wow-duration="1s"
+                    style="
+                        visibility: visible;
+                        animation-duration: 1s;
+                        animation-delay: 0.5s;
+                        animation-name: fadeInUp;
+                    "
+                >
+                    <span style="position: relative; top: -8px; color: #9999ff"
+                        >Where creativity
+                    </span>
+                    <div class="center_text">
+                        <span class="blackText" style="6s">Enter </span>
+                        <span class="big_text color_white" style="color: blue">
+                            <p class="big_letter">B</p>
+                            lue Marlin</span
+                        >
+                    </div>
+                    <span style="position: relative; top: -8px; color: #9999ff">
+                        knows no bounds</span
+                    >
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- end breadcrumbs -->
+{% endblock %} {% block content %}
+
+<section
+    id="cloud-wrapper"
+    class="wow fadeIn parallax"
+    data-stellar-background-ratio="0.5"
+    style="visibility: visible; animation-name: fadeIn"
+>
+    <div
+        id="carousel-example-generic"
+        class="carousel slide"
+        data-ride="carousel"
+        style="position: absolute; top: 0; height: 100%"
+    >
+        <!-- Wrapper for slides -->
+        <div class="carousel-inner" style="height: 100%" role="listbox">
+            <div style="height: 100%" class="item active">
+                <img
+                    style="width: 100%; height: 100%"
+                    src="{% static './Dream Weaver – Packages_files/1.jpg' %}"
+                    alt="..."
+                />
+            </div>
+        </div>
+
+        <!-- Controls -->
+    </div>
+    <div class="opacity-medium bg-extra-dark-blue"></div>
+    <div class="container">
+        <div class="row">
+            <div
+                class="col-md-12 col-sm-12 col-xs-12 extra-small-screen display-table page-title-large"
+            >
+                <div
+                    class="display-table-cell vertical-align-middle text-center"
+                >
+                    <!-- start page title -->
+                    <h1
+                        class="text-white big-letter alt-font font-weight-500 letter-spacing-minus-1 margin-10px-bottom"
+                    >
+                        <font color="blue" face="gill sans" size="12"
+                            ><b>Our</b> Services</font
+                        >
+                    </h1>
+                    <!-- end page title -->
+                </div>
+            </div>
+        </div>
+    </div>
+    <canvas id="cloud-panel" width="10" height="1" class="canvasstyle"></canvas>
+
+    <!-- end page title section -->
+    <!-- start information section -->
+
+    <div class="container">
+        <div class="row equalize sm-equalize-auto">
+            <div
+                class="col-md-12 col-sm-12 wow fadeInUp"
+                style="visibility: visible; animation-name: fadeInUp"
+            >
+                <div class="display-table width-100 heidth-100">
+                    <div class="display-table-cell vertical-align-middle">
+                        <ul
+                            style="
+                                list-style: none;
+                                width: 100%;
+                                text-align: center;
+                                padding-left: 0;
+                            "
+                        >
+                            <li
+                                style="
+                                    display: inline-block;
+                                    margin-right: 50px;
+                                "
+                            >
+                                <a
+                                    style="
+                                        display: block;
+                                        width: 100%;
+                                        padding: 15px 30px;
+                                        border: none;
+                                        color: #ffffff;
+                                        text-decoration: none;
+                                        background: rgb(6, 175, 218);
+                                        text-align: center;
+                                        float: left;
+                                    "
+                                    href="dhaka"
+                                    rel="noopener"
+                                    >Dhaka Packages</a
+                                >
+                            </li>
+                            <li style="display: inline-block">
+                                <a
+                                    style="
+                                        display: block;
+                                        width: 100%;
+                                        padding: 15px 30px;
+                                        border: none;
+                                        color: #ffffff;
+                                        text-decoration: none;
+                                        background: rgb(6, 175, 218);
+                                        text-align: center;
+                                        float: right;
+                                    "
+                                    href="chittagong"
+                                    target="_blank"
+                                    rel="noopener"
+                                    >Chittagong Packages</a
+                                >
+                            </li>
+                            <br /><br />
+                            <li style="display: inline-block">
+                                <a
+                                    style="
+                                        display: block;
+                                        width: 100%;
+                                        padding: 15px 30px;
+                                        border: none;
+                                        color: #ffffff;
+                                        text-decoration: none;
+                                        background: rgb(6, 175, 218);
+                                        text-align: center;
+                                        float: right;
+                                    "
+                                    href="rajshahi"
+                                    target="_blank"
+                                    rel="noopener"
+                                    >Rajshahi Packages</a
+                                >
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}

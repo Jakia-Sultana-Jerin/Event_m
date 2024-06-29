@@ -1,0 +1,408 @@
+{% load static %} 
+{% url 'home' as home %}
+{% url 'about' as about %} 
+{% url 'portfolio' as portfolio %} 
+{% url 'packages' as packages %} 
+{% url 'online_booking' as online_booking %}
+{% url 'contact' as contact %}
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Blue Marlin</title>
+    <link href="{% static  'css/bootstrap.min.css' %}" rel="stylesheet" type="text/css" />
+    <link href="{% static 'css/font-awesome.css' %} " rel="stylesheet" type="text/css" />
+    <link href="{% static  'css/style.css' %}" rel="stylesheet" type="text/css" />
+    <link href="{% static  'css/responsive.css' %}" rel="stylesheet" type="text/css" />
+
+    <link rel="stylesheet" href="{% static 'css/animate.css' %}" />
+    <link href="https://fonts.googleapis.com/css?family=Tangerine:400,700" rel="stylesheet" />
+    <link rel="stylesheet" href="{% static 'css/master-responsive.css' %}" type="text/css" />
+
+    <noscript>
+            <link
+                rel="stylesheet"
+                type="text/css"
+                href="{% static 'css/noJS.css' %}"
+            />
+        </noscript>
+</head>
+
+<body id="wrapper" data-spy="scroll" data-target="#bs-example-navbar-collapse-1" oncontextmenu="return false">
+    <div class="socialHolder">
+        <ul>
+            <li>
+                <a href="https://www.facebook.com/BlueMarlinevents/" target="_blank"><img src="{% static 'images/facebook_png.png' %}" /></a>
+            </li>
+            <li>
+                <a href="https://twitter.com/BlueMarlinevents" target="_blank"><img src=" {% static 'images/twitter_png.png' %}" /></a>
+            </li>
+            <li>
+                <a href="https://www.instagram.com/BlueMarlinevents/" target="_blank"><img src="{% static  'images/isntagram_png.png' %}" /></a>
+            </li>
+        </ul>
+    </div>
+    <!-- start breadcrumbs -->
+
+    {% block breadcrumbs %} {% endblock %}
+
+    <!-- end breadcrumbs -->
+
+    <!-- start header -->
+
+    <header data-offset-top="2" data-spy="affix" id="header">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-2 col-sm-1 col-xs-12 text-center logo effect_logo mobile_none">
+                    <a class="navbar-brand" data-wow-duration="3s" href="#">
+                        <font face="algeriaD" color="#9999ff" size="6s"><b>BLUE</b></font><br />
+                        <font face="Lucida calligraphy" color="blue" size="6s"><b>MARLIN</b></font>
+                    </a>
+                    <a href="Blue Marlin Events"><img src="{% static 'images/gif/Animation-GIF2.gif' %}" class="gif_width" data-wow-duration="3s" style="padding-top: 70px" /></a>
+                </div>
+
+                <div class="col-md-10 col-sm-11 col-xs-12 header-right affix-header-right">
+                    <nav class="navbar navbar-default col-xs-12 text-center">
+                        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                            <ul class="nav navbar-nav">
+                                <li class="hvr-underline-from-center {% if request.path == home %} active {% endif %}">
+                                    <a href="/">HOME </a>
+                                </li>
+                                <li class="hvr-underline-from-center {% if request.path == about %} active {% endif %} ">
+                                    <a href="/about/">ABOUT </a>
+                                </li>
+                                <li class="hvr-underline-from-center {% if request.path == portfolio %} active {% endif %} ">
+                                    <a href="/portfolio/">PORTFOLIO </a>
+                                </li>
+                                <li class="hvr-underline-from-center {% if request.path == packages %} active {% endif %}">
+                                    <a href="/packages/">PACKAGES </a>
+                                </li>
+                                <li class="hvr-underline-from-center {% if request.path == online_booking %} active {% endif %}">
+                                    <a href="/online-booking/">ONLINE BOOKING
+                                        </a>
+                                </li>
+                                <li class="hvr-underline-from-center {% if request.path == contact %} active {% endif %}">
+                                    <a href="/contact/">CONTACT </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </nav>
+
+                    <div class="callactions">
+                        <p>
+                            Call Us
+                            <a href="tel: 01843695712"> 01843695712</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- this will handle the main dynamic content  -->
+
+    {% block content %} {% endblock %}
+
+    <!-- footer -->
+    <div id="footer" class="module parallax parallax-footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-2 col-sm-1 col-xs-12 text-center logo effect_logo mobile_none">
+                    <a class="navbar-brand" data-wow-duration="3s" href="#">
+                        <font face="algeriaD" color="#9999ff" size="6s"><b>BLUE</b></font><br />
+                        <font face="Lucida calligraphy" color="blue" size="6.5s"><b>MARLIN</b></font>
+                    </a>
+                    <a href="Blue Marlin Events"><img src="{% static 'images/gif/Animation-GIF2.gif' %}" class="gif_width" data-wow-duration="3s" style="padding-top: 70px" /></a>
+                </div>
+
+                <div class="col-md-5 col-sm-12 col-xs-12 text-center footer-info">
+                    <p><i class="fa fa-map-marker fa-3x"></i></p>
+                    <p class="footer-text">
+                        O R Nizam Road, GEC Circle, Chittagong .
+                    </p>
+                </div>
+                <div class="col-md-2 col-sm-12 col-xs-12 text-center footer-info">
+                    <p><i class="fa fa-envelope fa-3x"></i></p>
+                    <p class="footer-text">
+                        <a href="mailto:info@tantraa.net">info@marlin.net</a
+                            >
+                        </p>
+                    </div>
+                    <div
+                        class="col-md-2 col-sm-12 col-xs-12 text-center footer-info"
+                    >
+                        <p><i class="fa fa-phone fa-3x"></i></p>
+                        <p class="footer-text">
+                            <a href="tel: 022 - 6136 1000"> 0181-2000048</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="goTop">
+            <a href="#top"><img src="{% static 'images/goTop_btn.png' %}" /></a>
+        </div>
+    </div>
+    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header border_header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                </div>
+                <div class="modal-body">
+                    <div id="custom_carousel" class="carousel" data-ride="carousel" data-interval="2000">
+                        <!-- Wrapper for slides -->
+                        <div class="carousel-inner">
+                            <div class="item active">
+                                <div class="container-fluid">
+                                    <div class="row">
+                                        <div class="top col-md-12 col-sm-12 col-xs-12 event_design">
+                                            <img src="{% static 'images/blog-img1.html' %}" class="img-responsive" />
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="container-fluid">
+                                    <div class="row">
+                                        <div class="top col-md-12 col-sm-12 col-xs-12 event_design">
+                                            <img src="{% static  'images/blog-img2.html' %}" class="img-responsive" />
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="container-fluid">
+                                    <div class="row">
+                                        <div class="top col-md-12 col-sm-12 col-xs-12 event_design">
+                                            <img src="{% static  'images/blog-img3.html' %}" class="img-responsive" />
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="container-fluid">
+                                    <div class="row">
+                                        <div class="top col-md-12 col-sm-12 col-xs-12 event_design">
+                                            <img src="{% static  'images/blog-img1.html' %}" class="img-responsive" />
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="container-fluid">
+                                    <div class="row">
+                                        <div class="top col-md-12 col-sm-12 col-xs-12 event_design">
+                                            <img src="{% static  'images/blog-img2.html' %}" class="img-responsive" />
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="container-fluid">
+                                    <div class="row">
+                                        <div class="top col-md-12 col-sm-12 col-xs-12 event_design">
+                                            <img src="{% static  'images/blog-img3.html' %}" class="img-responsive" />
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="container-fluid">
+                                    <div class="row">
+                                        <div class="top col-md-12 col-sm-12 col-xs-12 event_design">
+                                            <img src="{% static  'images/blog-img2.html' %}" alt="blog image" class="img-responsive" />
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="container-fluid">
+                                    <div class="row">
+                                        <div class="top col-md-12 col-sm-12 col-xs-12 event_design">
+                                            <div class="main_heading wow fadeInUp animated animated" data-wow-delay="0.5s" data-wow-duration="1s" style="
+                                                        visibility: visible;
+                                                        animation-duration: 1s;
+                                                        animation-delay: 0.5s;
+                                                        animation-name: fadeInUp;
+                                                    ">
+                                                <span class="border_left"></span>
+                                                <span class="border_right"></span>
+                                                <span style="
+                                                            position: relative;
+                                                            top: -8px;
+                                                        ">Blue Marlin Is
+                                                        the</span
+                                                    >
+                                                    <div class="center_text">
+                                                        <span
+                                                            class="blackText our_satisf"
+                                                            >The Blue Marlin
+                                                        </span>
+                                                <span class="big_text orange_color">
+                                                            <p
+                                                                class="big_letter"
+                                                            >
+                                                                P
+                                                            </p>
+                                                            romise</span
+                                                        >
+                                                    </div>
+                                                    <span
+                                                        style="
+                                                            position: relative;
+                                                            top: -8px;
+                                                        "
+                                                        >behind your event</span
+                                                    >
+                                                </div>
+                                                <img
+                                                    src="{% static '../disecor.imaginacolombia.com/assets/mfiaASNcDB7-1.jpg' %"
+                                                    class="img-responsive"
+                                                />
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- End Item -->
+                            </div>
+                            <a
+                                data-slide="prev"
+                                href="#custom_carousel"
+                                class="izq carousel-control"
+                                >‹</a
+                            >
+                            <a
+                                data-slide="next"
+                                href="#custom_carousel"
+                                class="der carousel-control"
+                                >›</a
+                            >
+                            <!-- End Carousel Inner -->
+                            <div
+                                class="controls draggable ui-widget-content col-md-12 col-xs-12"
+                            >
+                                <ul class="nav ui-widget-header margin_top">
+                                    <li
+                                        data-target="#custom_carousel"
+                                        data-slide-to="0"
+                                        class="active"
+                                    >
+                                        <a href="#"
+                                            ><img
+                                                src="{% static 'images/blog-small-img1.html' %}"
+                                            /><small>EVENT DESIGN</small></a
+                                        >
+                                    </li>
+                                    <li
+                                        data-target="#custom_carousel"
+                                        data-slide-to="1"
+                                    >
+                                        <a href="#"
+                                            ><img
+                                                src="{% static 'images/blog-small-img2.html' %}"
+                                            /><small>EVENT DESIGN</small></a
+                                        >
+                                    </li>
+                                    <li
+                                        data-target="#custom_carousel"
+                                        data-slide-to="2"
+                                    >
+                                        <a href="#"
+                                            ><img
+                                                src="{% static 'images/blog-small-img3.html' %}"
+                                            /><small>EVENT DESIGN</small></a
+                                        >
+                                    </li>
+                                    <li
+                                        data-target="#custom_carousel"
+                                        data-slide-to="3"
+                                    >
+                                        <a href="#"
+                                            ><img
+                                                src="{% static 'images/blog-small-img1.html' %}"
+                                            /><small>EVENT DESIGN</small></a
+                                        >
+                                    </li>
+                                    <li
+                                        data-target="#custom_carousel"
+                                        data-slide-to="4"
+                                    >
+                                        <a href="#"
+                                            ><img
+                                                src="{% static 'images/blog-small-img2.html' %}"
+                                            /><small>EVENT DESIGN</small></a
+                                        >
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!-- End Carousel -->
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- footer -->
+
+        <div id="copy-right">
+            <div class="container">
+                <div class="row text-center">
+                    <p>
+                        CopyRight &copy; 2015 Blue Marlin Events, Designed and
+                        Developed by
+                        <a
+                            target="_blank"
+                            href="http://bme-zone.com/"
+                            class="sda_cls"
+                            >BME</a
+                        >
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <script src="{% static 'scripts/wow.min.js' %}"></script>
+        <script
+            type="text/javascript"
+            src="{% static 'scripts/jquery.js' %}"
+        ></script>
+        <script
+            type="text/javascript"
+            src="{% static 'scripts/bootstrap.min.js' %}"
+        ></script>
+        <script
+            type="text/javascript"
+            src="{% static 'scripts/owl.carousel.js' %}"
+        ></script>
+        <script
+            type="text/javascript"
+            src="{% static 'scripts/script.js' %}"
+        ></script>
+        <script
+            src="{% static 'js/extra.js' %}"
+            type="text/javascript"
+        ></script>
+        <script>
+            $(function () {
+                $("#nav li:has(ul)").doubleTapToGo();
+            });
+        </script>
+
+        <script type="text/javascript">
+            $("a[href='#top']").click(function () {
+                $("html, body").animate(
+                    {
+                        scrollTop: 0,
+                    },
+                    "slow"
+                );
+                return false;
+            });
+        </script>
+    </body>
+
+    <!-- Mirrored from www.tantraa.net/about-us.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 09 Apr 2019 07:29:02 GMT -->
+</html>

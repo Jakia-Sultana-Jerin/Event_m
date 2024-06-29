@@ -1,0 +1,132 @@
+{% extends '../base.html' %} {% load static %} {% block breadcrumbs %}
+<div class="container_fluid">
+    <div
+        class="block"
+        style="
+            height: 700px;
+            width: 100%;
+            background-image: url({% static 'images/photographer/bridalsaribg.jpg' %});
+        "
+    ></div>
+</div>
+
+{% endblock %} {% block content %}
+<div class="module parallax parallax-events" id="events">
+    <div class="container">
+        <div class="row">
+            <div class="event-inner col-sm-12 text-center">
+                <div
+                    class="main_heading block2 wow fadeInUp animated"
+                    data-wow-delay="0.5s"
+                    data-wow-duration="1s"
+                    style="
+                        visibility: visible;
+                        animation-duration: 1s;
+                        animation-delay: 0.5s;
+                        animation-name: fadeInUp;
+                    "
+                >
+                    <span class="border_left left_client"></span>
+                    <span class="border_right right_client"></span>
+                    <span style="position: relative; top: -8px">We Hire</span>
+
+                    <div class="center_text">
+                        <span class="blackText">Our Collections</span>
+                        <span class="big_text color_white"> </span>
+
+                        <p class="big_letter">
+                            <span class="big_text color_white">P</span>
+                        </p>
+                        <span class="big_text color_white"> ackages</span>
+                    </div>
+                    <span style="position: relative; top: -8px"
+                        >Bridal Dresses</span
+                    >
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="clearfix"></div>
+
+    <!-- picture section -->
+
+    <section id="thumbnail">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-4 col-md-4">
+                    <div class="thumbnail">
+                        <img
+                            src="{% static 'new photo/red-silk-all-over-woven-saree.jpg' %}"
+                            alt="Bridal-Dresses.html"
+                        />
+
+                        <h3 class="text-center">
+                            Red silk all over Woven Saree
+                        </h3>
+
+                        <p>Color:Red</p>
+                        <p>Price :10500</p>
+                        <p class="text-center">
+                            <a
+                                href="/contact"
+                                class="btn btn-primary"
+                                role="button"
+                                >Contact</a
+                            >
+                        </p>
+                    </div>
+                </div>
+
+                <div class="col-sm-4 col-md-4">
+                    <div class="thumbnail">
+                        <img
+                            src="{% static 'new photo/golden--banarasi-saree-with-multicolored-buttas-and-red-highlights.jpg' %}"
+                            alt="Bridal-Dresses.html"
+                        />
+
+                        <h3 class="text-center">
+                            Golden Banarasi Saree with Multicolor Buttas
+                        </h3>
+
+                        <p>Color:Multicolor and red highlights</p>
+                        <p>Price :12500</p>
+                        <p class="text-center">
+                            <a
+                                href="/contact"
+                                class="btn btn-primary"
+                                role="button"
+                                >Contact</a
+                            >
+                        </p>
+                    </div>
+                </div>
+
+                <div class="col-sm-4 col-md-4">
+                    <div class="thumbnail">
+                        <img
+                            src="{% static 'new photo/red-and-maroon-satin-georgette-designer-lehenga-saree-with-zari-embroidery.jpg' %}"
+                            alt="Bridal-Dresses.html"
+                        />
+
+                        <h3 class="text-center">
+                            Red and Maroon Satin Georgette Design
+                        </h3>
+
+                        <p>Color:Red and Maroon</p>
+                        <p>Price :14350</p>
+                        <p class="text-center">
+                            <a
+                                href="/contact"
+                                class="btn btn-primary"
+                                role="button"
+                                >Contact</a
+                            >
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>
+{% endblock %}

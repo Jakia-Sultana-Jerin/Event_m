@@ -1,0 +1,160 @@
+{% extends '../base.html' %} {% load static %} {% block breadcrumbs %}
+<div class="container_fluid">
+    <div
+        class="block"
+        style="
+            height: 500px;
+            width: 100%;
+            background-image: url({% static 'images/carbg1.jpg' %});
+        "
+    >
+        <div class="row">
+            <div class="event-inner col-sm-12 text-center">
+                <div
+                    class="main_heading block2 wow fadeInUp animated text-tranmms"
+                    data-wow-delay="0.5s"
+                    data-wow-duration="1s"
+                    style="
+                        visibility: visible;
+                        animation-duration: 1s;
+                        animation-delay: 0.5s;
+                        animation-name: fadeInUp;
+                    "
+                >
+                    <span style="position: relative; top: -8px; color: #9999ff"
+                        >Where creativity
+                    </span>
+                    <div class="center_text">
+                        <span class="blackText" style="6s">Enter </span>
+                        <span class="big_text color_white" style="color: blue">
+                            <p class="big_letter">B</p>
+                            lue Marlin</span
+                        >
+                    </div>
+                    <span style="position: relative; top: -8px; color: #9999ff">
+                        knows no bounds</span
+                    >
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+{% endblock %} {% block content %}
+<div class="module parallax parallax-events" id="events">
+    <div class="container">
+        <div class="row">
+            <div class="event-inner col-sm-12 text-center">
+                <div
+                    class="main_heading block2 wow fadeInUp animated"
+                    data-wow-delay="0.5s"
+                    data-wow-duration="1s"
+                    style="
+                        visibility: visible;
+                        animation-duration: 1s;
+                        animation-delay: 0.5s;
+                        animation-name: fadeInUp;
+                    "
+                >
+                    <span class="border_left left_client"></span>
+                    <span class="border_right right_client"></span>
+                    <span style="position: relative; top: -8px">We Hire</span>
+
+                    <div class="center_text">
+                        <span class="blackText">Our Chittagong</span>
+                        <span class="big_text color_white"> </span>
+
+                        <p class="big_letter">
+                            <span class="big_text color_white">P</span>
+                        </p>
+                        <span class="big_text color_white"> ackages</span>
+                    </div>
+                    <span style="position: relative; top: -8px"
+                        >Wedding Car</span
+                    >
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="clearfix"></div>
+
+    <!-- picture section -->
+
+    <section id="thumbnail">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-4 col-md-4">
+                    <div class="thumbnail">
+                        <img
+                            src="{% static 'new photo/toyota.jpg' %}"
+                            alt="#/contact"
+                        />
+
+                        <h3 class="text-center">Toyota</h3>
+                        <p>Exterior Colour:Black</p>
+
+                        <p>Interior Color:Gray</p>
+                        <p>Price :10000</p>
+                        <p>
+                            <a
+                                href="/contact"
+                                class="btn btn-primary"
+                                role="button"
+                                >Contact</a
+                            >
+                        </p>
+                    </div>
+                </div>
+
+                <div class="col-sm-4 col-md-4">
+                    <div class="thumbnail">
+                        <img
+                            src="{% static 'new photo/the-bandit.jpg' %}"
+                            alt="#/contact"
+                        />
+
+                        <h3 class="text-center">The Bandit</h3>
+                        <p>Exterior Colour:Black</p>
+
+                        <p>Interior Color:White</p>
+                        <p>Price :15000</p>
+                        <p>
+                            <a
+                                href="/contact"
+                                class="btn btn-primary"
+                                role="button"
+                                >Contact</a
+                            >
+                        </p>
+                    </div>
+                </div>
+
+                <div class="col-sm-4 col-md-4">
+                    <div class="thumbnail">
+                        <img
+                            src="{% static 'new photo/Panther1.jpg' %}"
+                            alt="#/contact"
+                        />
+
+                        <h3 class="text-center">panther</h3>
+                        <p>Exterior Colour:White</p>
+
+                        <p>Interior Color:Cream</p>
+                        <p>Price :10000</p>
+                        <p>
+                            <a
+                                href="/contact"
+                                class="btn btn-primary"
+                                role="button"
+                                >Contact</a
+                            >
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>
+
+{% endblock %}
